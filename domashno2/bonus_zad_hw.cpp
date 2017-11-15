@@ -18,7 +18,6 @@ int main(){
             break;
         }
     }
-    int tmp;
     for(int i=pointer;i<9;i++){
         a[i]=a[i+1];
     }
