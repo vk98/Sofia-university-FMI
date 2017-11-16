@@ -15,14 +15,15 @@ int main(){
     for(int i=0;i<10;i++){
         if(x==a[i]){
             pointer=i;
-            break;
+
+                for(int u=pointer;u<9;u++){
+                        a[u]=a[u+1];
+                    }
+                    a[9]=-1;
+                    i--;
         }
     }
-    int tmp;
-    for(int i=pointer;i<9;i++){
-        a[i]=a[i+1];
-    }
-    a[9]=-1;
+
     for(int i=0;i<10;i++){
         cout<<a[i]<<" ";
     }
