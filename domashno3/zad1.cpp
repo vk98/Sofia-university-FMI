@@ -8,7 +8,12 @@ int main(){
     int overallSum=0;
     for(int i=0;i<6;i++){
             for(int u=0;u<6;u++){
+
                 cin>>table[i][u];
+                while(table[i][u]<10 || table[i][u]>99){
+                    cout<<"vuvedi stoinost mejdu 0 i 22: ";
+                    cin>>table[i][u];
+                }
             }
         }
 
